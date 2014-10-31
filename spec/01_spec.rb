@@ -49,19 +49,19 @@ describe 'Hash basics' do
     # Look up in Ruby docs how to add to a hash, and make the changes stick!
 
     it "adds nickname information" do
-			person[:nick_name] = "BJ"
+      person[:nick_name] = "BJ"
       expect( person[:nick_name] ).to be == 'BJ'
     end
 
     it "adds information about tournament wins" do
-			person[:tournament_wins] = { wimbledon: ["1976", "1977", "1978", "1979", "1980"] }
+      person[:tournament_wins] = { wimbledon: ["1976", "1977", "1978", "1979", "1980"] }
       expect( person[:tournament_wins] ).to be == {
         wimbledon: ["1976", "1977", "1978", "1979", "1980"]
       }
     end
 
     it "formats details about years person was active" do
-			person[:tournament_wins] = { wimbledon: ["1976", "1977", "1978", "1979", "1980"] }
+      person[:tournament_wins] = { wimbledon: ["1976", "1977", "1978", "1979", "1980"] }
       years_active = "Years active: #{person[:tournament_wins][:wimbledon][0]}-#{person[:tournament_wins][:wimbledon][-1]}"
       expect( years_active ).to be == "Years active: 1976-1980"
     end

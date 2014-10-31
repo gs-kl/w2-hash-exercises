@@ -24,7 +24,7 @@ describe "More fun with hashes" do
 
   it "calculates and returns the last name of the person sitting next to joe" do
     # Use code! Hint: find who joe is sitting next to, then use that to find their data
-		neighbor = "#{people["joe"][:sitting_next_to]}"
+    neighbor = "#{people["joe"][:sitting_next_to]}"
     neighbors_last_name = "#{people[neighbor][:last_name]}"
     expect( neighbors_last_name ).to be == "Summers"
   end

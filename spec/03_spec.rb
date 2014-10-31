@@ -4,17 +4,17 @@ describe 'creating hashes' do
   let(:___) { nil }
 
   let(:dogs) do
-		{
-			"Harleigh" => {
-				favorite_toy: "frog", 
-				sports: ["frisbee", "hiking"]
-			},
-			"Trixie" => {
-				favorite_food: "steak",
-				sports: [:swimming, :prancing]
-			}
-		}
-	end
+    {
+      "Harleigh" => {
+        favorite_toy: "frog", 
+        sports: ["frisbee", "hiking"]
+      },
+      "Trixie" => {
+        favorite_food: "steak",
+        sports: [:swimming, :prancing]
+      }
+    }
+  end
 
   before do
   end
